@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <h1>Formulario para el ingreso de productos</h1>
+            <form method="POST" action="/api/productos" class="formulario">
+                <input type="text" placeholder="Ingrese nombre de producto" name="title"/>
+                <input type="number" placeholder="Ingrese precio del producto" name="price"/>
+                <input type="text" placeholder="Ingrese link de la imagen" name="thumbnail"/>
+                <div class="divBoton">
+                    <button type="submit" class="botonFormulario">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

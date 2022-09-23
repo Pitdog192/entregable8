@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.formulario{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 5px;
+    width: 25%;
+    padding: 10px;
+}
+
+.divBoton{
+    position: relative;
+}
+
+.botonFormulario{
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+}

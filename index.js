@@ -1,5 +1,6 @@
 import express from 'express'
 import { Router } from 'express'
+import productos from './productos.js'
 
 const routerProductos = Router()
 const app = express()
@@ -12,33 +13,6 @@ app.use(express.static('public'))
 const port = 8080
 const server = app.listen(port, () => console.log(`Servidor escuchado en el puerto: ${port}`))
 server.on('error', (error) => console.log(`Error producido: ${error}`))
-
-const productos = [
-    {
-        title: "Producto 1",
-        price: 225,
-        thumbnail: "Link a imagen imaginaria",
-        id: 1
-    },
-    {
-        title: "Producto 2",
-        price: 180,
-        thumbnail: "Link a imagen imaginaria",
-        id: 2
-    },
-    {
-        title: "Producto 3",
-        price: 350,
-        thumbnail: "Link a imagen imaginaria",
-        id: 3
-    },
-    {
-        title: "Producto 4",
-        price: 70,
-        thumbnail: "Link a imagen imaginaria",
-        id: 4
-    }
-]
 
 routerProductos.get('/', ( req, res ) => { //devuelve todos los productos
     res.json(productos)

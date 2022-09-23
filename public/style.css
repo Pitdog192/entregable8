@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.secPrincipal{
+    width: calc(100% - 20px);
+    margin: auto;
+}
+
 .formulario{
     display: grid;
     grid-template-rows: repeat(4, 1fr);
